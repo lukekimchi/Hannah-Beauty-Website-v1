@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Work Sans", "sans-serif";
+  letter-spacing: 1px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  @apply lg:text-[32px] text-[48px];
+
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  @apply lg:text-[20px] text-[32px];
+}
+
+.nav-link {
+  @apply clickable hover:font-bold lg:text-base text-xl font-medium
+}
+
+.description {
+  font-weight: regular;
+  white-space: pre-line;
+  @apply lg:text-[14px] text-[20px]
+}
+
+.book-now-btn {
+  @apply mt-5 mb-10 bg-accent hover:bg-red-800 text-white lg:py-4 lg:px-7 lg:text-base text-3xl py-6 px-8 shadow-2xl
+}
+
+.stick-to-top {
+  position: sticky !important;
+  top: 0;
+  z-index: 40;
+}
+
+form input,
+textarea {
+  @apply font-normal text-black px-3 py-2 border-black border -m-[0.5px] rounded-none focus:outline-none focus:bg-slate-50;
+}
+
+.clickable {
+  @apply transition-transform duration-300 hover:translate-x-1 hover:-translate-y-1 cursor-pointer;
+}
+
+.home-image {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+.gallery-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 175px;
+  height: 175px;
+}
+
+.service-details {
+  @apply flex aspect-square items-center justify-center p-6;
+}
+
+.question {
+  @apply tracking-wide font-normal;
+}
+
+.tab-trigger {
+  @apply border-l border-secondary w-full focus:bg-secondary py-5 text-xl lg:text-base;
+}
+
+nav a:hover {
+  transition: all 2s ease-in-out;
+}
