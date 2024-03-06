@@ -1,3 +1,6 @@
+// FIXME: image dimensions kinda whack
+// FIXME: loading of image takes a while
+
 import { React } from "react";
 import {
   browsImages,
@@ -8,7 +11,9 @@ import {
 } from "../constants/images";
 import { motion as m } from "framer-motion";
 import { fadeInUp, fadeInDown } from "../constants/animations";
-import BeforeAfterSlider from "react-before-after-slider";
+import ReactCompareImage from 'react-compare-image';
+import ReactBeforeSliderComponent from "react-before-after-slider-component";
+import "react-before-after-slider-component/dist/build.css";
 
 const ServiceGallery = ({ service }) => {
   const serviceImageMapping = {
@@ -41,18 +46,8 @@ const ServiceGallery = ({ service }) => {
                 />
               ) : (
                 // Render BeforeAfterSlider for other services
-                <div
-                  className="gallery-image"
-                  style={{ backgroundImage: `url(${image.before})` }}
-                  alt={`Img ${image.id}`}
-                >
-                  <BeforeAfterSlider
-                    before={image.before}
-                    after={image.after}
-                    height={175}
-                    width={175}
-                    defaultProgress={0.7}
-                  />
+                <div className="gallery-image">
+                  <ReactCompareImage leftImageCss={{width: "175px", height: "175px", objectFit: "cover"}} rightImageCss={{width: "175px", height: "175px", objectFit: "cover"}} sliderLineWidth={1} sliderPositionPercentage={0.7} hover={true} handleSize={25} leftImage={image.before} rightImage={image.after}/>
                 </div>
               )}
             </m.div>
@@ -78,5 +73,3 @@ const ServiceGallery = ({ service }) => {
 };
 
 export default ServiceGallery;
-
-// TODO: before and after transition thing

@@ -26,14 +26,16 @@
     "lucide-react": "^0.331.0",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
-    "react-before-after-slider": "^1.0.4",
+    "react-before-after-slider-component": "^1.1.8",
+    "react-compare-image": "^3.4.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.0",
     "resend": "^3.1.0",
     "sonner": "^1.4.2",
     "tailwind-merge": "^2.2.1",
-    "tsx-to-jsx": "^0.0.4"
+    "tsx-to-jsx": "^0.0.4",
+    "vaul": "^0.9.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",

@@ -4,9 +4,9 @@ export const servicesData = [
     name: "brows",
     img: "src/assets/brows.webp",
     preview:
-      "NANO HAIR STROKE & SHADING\n\nSemi-permanent cosmetic technique combining precise nano hair strokes with a soft shading effect to create natural-looking and defined eyebrows.",
+      "NANO HAIRSTROKE & SHADING\n\nSemi-permanent cosmetic technique combining precise nano hairstrokes with a soft shading effect to create natural-looking and defined eyebrows.",
     description:
-      "NANO HAIR STROKE + SHADING\n\nNano hair stroke and shading is a semi-permanent cosmetic technique done with a handheld tool, that combines precise nano hair strokes with a soft shading effect to create natural-looking and defined eyebrows. It's a more advanced technique compared to older methods like microblading. Pigments are designed to naturally fade over time allowing for adjustments to colour and shape as the client's natural features change.",
+      "NANO HAIRSTROKE + SHADING\n\nNano hairstroke and shading is a semi-permanent cosmetic technique done with a handheld tool, that combines precise nano hairstrokes with a soft shading effect to create natural-looking and defined eyebrows. It's a more advanced technique compared to older methods like microblading. Pigments are designed to naturally fade over time allowing for adjustments to colour and shape as the client's natural features change.\nAt Hannah Beauty, we pride ourselves on providing the best, most natural brows, with no worry about scarring or discolouration.",
     prices: {
       headers: ["Session", "Extra Info", "Price"],
       rows: [

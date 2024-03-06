@@ -53,24 +53,46 @@ export const browsFaqData = [
     id: 1,
     q: "What kind of brow technique does Hannah Beauty use?",
     a: `
-        At Hannah Beauty, we use an advanced technique called nano hair stroke and shading.
-        This is a semi-permanent cosmetic technique done with a handheld tool, that combines precise nano hair strokes with a soft shading effect to create natural-looking and defined eyebrows. 
-        It's a more advanced technique compared to older methods like microblading. 
-        Pigments are designed to naturally fade over time allowing for adjustments to colour and shape as the client's natural features change. 
+        At Hannah Beauty, we use an advanced technique called nano hairstroke and shading.
+        What is nano hairstroke and shading?
+        • Modern Technique: The nano hairstroke technique is a contemporary approach to eyebrow tattoos, done with a handheld tool, that combines precise nano hairstrokes with a soft shading effect to create natural-looking and defined eyebrows. 
+        • High Technical Skill: Unlike traditional older tattoo methods, such as microblading, nano hairstroke requires even more advanced technical expertise and equipment.
+        • Minimally Invasive: Applied gently, it prevents swelling and discomfort normally associated with tattooing procedures.
+        • Pigments are designed to naturally fade over time allowing for adjustments to colour and shape as the client's natural features change. 
         `,
   },
   {
     id: 2,
-    q: "How is nano hair stroke and shading different to a brow tattoo?",
+    q: "How is nano hairstroke and shading different to a brow tattoo?",
     a: `
-        Nano hair stroke and shading is not in the deep layer of the skin, unlike tattooing, but more on the surface. It is also not permanent but rather semi-permanent. The colour will naturally fade.
+        Nano hairstroke and shading is not in the deep layer of the skin, unlike tattooing, but more on the surface. It is also not permanent but rather semi-permanent. The colour will naturally fade which is a desired effect.
         `,
+  },
+  {
+    id: 6,
+    q: "How is nano hairstroke and shading different to microblading?",
+    a: `
+      Nano hairstroke and shading is a much more modern technique, requiring a greater level of advanced technical expertise and equipment.\n
+      A digital tattoo machine with a single, ultra-fine needle is used which allows for more precise control over the depth and speed of the needle, enabling the artist to create extremely fine and detailed hair strokes.
+      Nano hair stroke technique often results in more realistic and finer hair strokes compared to microblading. The digital aspect allows for greater control, and the final appearance is generally more refined.\nNano hairstroke is also superior in that it is suitable for oily skin types whereas it makes microblading more difficult.
+      `,
+  },
+  {
+    id: 7,
+    q: "What are the benefits of nano hairstroke and shading?",
+    a: `
+    • Natural Look: Strives to produce the most authentic-looking eyebrows possible.
+    • Versatile Use: Suitable across a wide range of eyebrow types, from thin to oily or dry, accommodating various skin conditions.
+    • Ideal for Sensitive Skin Types: Perfect for people with oily, sensitive, or aging skin.
+    • Quicker Healing: The recovery period is relatively short, typically around 5 days, lessening the interruption to everyday life. The aftercare process is a lot easier too.
+    • Customizable: Offers a high degree of adjustability to meet individual preferences and needs.
+    `
   },
   {
     id: 3,
     q: "How long does it last?",
     a: `
-        The treatment is considered semi-permanent and will fade over time. This is desired to allow for adjustments to colour and shape as the your natural features change. 
+        The treatment is considered semi-permanent and will fade over time. This is desired to allow for adjustments to colour and shape as your natural features change. 
         Touch-ups are recommended every 1-2 years, but how often depends on a number of factors including:
         • Skin type (oily skin can result in faster fading)
         • Pigment colour used (lighter colours fade faster)
@@ -89,7 +111,7 @@ export const browsFaqData = [
     id: 5,
     q: "How should I care for my brows after the procedure?",
     a: `
-        At the end of your appointment, we will provide you with an aftercare cream to apply for the next 10-14 days immediately following your procedure. The details of aftercare are as follows:
+        At the end of your appointment, we will provide you with an aftercare cream to apply for the next 7-10 days immediately following your procedure. The details of aftercare are as follows:
 
         • Do not wash your brows. Water will draw the pigment out of the stroke.
         • Do not put your face into the shower stream.

@@ -69,6 +69,11 @@ textarea {
   width: 175px;
   height: 175px;
 }
+.before-after-slider-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .service-details {
   @apply flex aspect-square items-center justify-center p-6;
