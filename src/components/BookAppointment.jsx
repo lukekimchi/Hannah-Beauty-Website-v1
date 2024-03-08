@@ -1,4 +1,5 @@
 // FIXME: CORS policy for react resend
+// FIXME: toast for form submission styling
 
 import React, { useState, useEffect, useRef } from "react";
 import { Button } from "@react-email/components";

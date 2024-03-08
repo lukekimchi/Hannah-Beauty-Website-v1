@@ -11,7 +11,7 @@ import {
 } from "../constants/images";
 import { motion as m } from "framer-motion";
 import { fadeInUp, fadeInDown } from "../constants/animations";
-import ReactCompareImage from 'react-compare-image';
+import ReactCompareImage from "react-compare-image";
 import ReactBeforeSliderComponent from "react-before-after-slider-component";
 import "react-before-after-slider-component/dist/build.css";
 
@@ -46,8 +46,15 @@ const ServiceGallery = ({ service }) => {
                 />
               ) : (
                 // Render BeforeAfterSlider for other services
-                <div className="gallery-image">
-                  <ReactCompareImage leftImageCss={{width: "175px", height: "175px", objectFit: "cover"}} rightImageCss={{width: "175px", height: "175px", objectFit: "cover"}} sliderLineWidth={1} sliderPositionPercentage={0.7} hover={true} handleSize={25} leftImage={image.before} rightImage={image.after}/>
+                <div className="w-[175px] h-[175px]">
+                  <ReactCompareImage
+                    sliderLineWidth={1}
+                    sliderPositionPercentage={0.7}
+                    hover={true}
+                    handleSize={25}
+                    leftImage={image.after}
+                    rightImage={image.before}
+                  />
                 </div>
               )}
             </m.div>

@@ -2,7 +2,7 @@ export const servicesData = [
   {
     id: 1,
     name: "brows",
-    img: "src/assets/brows.webp",
+    img: "src/assets/brows/brows.webp",
     preview:
       "NANO HAIRSTROKE & SHADING\n\nSemi-permanent cosmetic technique combining precise nano hairstrokes with a soft shading effect to create natural-looking and defined eyebrows.",
     description:
@@ -37,7 +37,7 @@ export const servicesData = [
   {
     id: 2,
     name: "lash_lift",
-    img: "src/assets/lash_lift.webp",
+    img: "src/assets/lash_lift/lash_lift.webp",
     preview: "Give your lashes a luscious curl.",
     description:
       "Lash lift is a cosmetic procedure that enhances and curls natural eyelashes, providing a semi-permanent lift and a more open-eyed appearance without the need for eyelash extensions.",
@@ -60,7 +60,7 @@ export const servicesData = [
   {
     id: 3,
     name: "eyeliner",
-    img: "src/assets/eyeliner.webp",
+    img: "src/assets/eyeliner/eyeliner.webp",
     preview: "Semi-permanent tattooing of the eyeline.",
     description:
       "Eyeliner semi-permanent tattoo is a cosmetic procedure in which pigments are implanted along the lash line to create the appearance of defined and long-lasting eyeliner, offering a hassle-free solution for enhanced eyes. No need to put on eyeliner every single morning.",
@@ -94,7 +94,7 @@ export const servicesData = [
   {
     id: 4,
     name: "lip_blush",
-    img: "src/assets/lip_blush.webp",
+    img: "src/assets/lip_blush/lip_blush.webp",
     preview:
       "Semi-permanent lip colouring technique that enhances natural lip color.",
     description:
@@ -134,7 +134,7 @@ export const servicesData = [
   {
     id: 5,
     name: "smp",
-    img: "src/assets/smp.webp",
+    img: "src/assets/smp/smp.webp",
     preview:
       "Scalp micro-pigmentation (SMP) is a non-invasive cosmetic procedure that uses tiny ink deposits to replicate the appearance of hair follicles, providing the illusion of a fuller scalp.",
     description:
@@ -144,37 +144,37 @@ export const servicesData = [
       rows: [
         {
           area: "3 x 9cm",
-          img: "src/assets/smp_area_3x9.webp",
+          img: "src/assets/smp/smp_area_3x9.webp",
           sessions: "2",
           price: "$450",
         },
         {
           area: "5 x 9cm",
-          img: "src/assets/smp_area_5x9.webp",
+          img: "src/assets/smp/smp_area_5x9.webp",
           sessions: "4",
           price: "$700",
         },
         {
           area: "8 x 9cm",
-          img: "src/assets/smp_area_8x9.webp",
+          img: "src/assets/smp/smp_area_8x9.webp",
           sessions: "5",
           price: "$900",
         },
         {
           area: "10 x 9cm",
-          img: "src/assets/smp_area_10x9.webp",
+          img: "src/assets/smp/smp_area_10x9.webp",
           sessions: "5",
           price: "$1,300",
         },
         {
           area: "15 x 9cm",
-          img: "src/assets/smp_area_15x9.webp",
+          img: "src/assets/smp/smp_area_15x9.webp",
           sessions: "5",
           price: "$1,900",
         },
         {
           area: "15 x 9cm +",
-          img: "src/assets/smp_area_15x9.webp",
+          img: "src/assets/smp/smp_area_15x9.webp",
           sessions: "variable",
           price: "variable",
         },

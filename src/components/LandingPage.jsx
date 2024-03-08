@@ -37,45 +37,45 @@ const LandingPage = () => {
   }, []);
 
   // Drawer open on load
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  // const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  useEffect(() => {
-    // Trigger the drawer opening after 1 second of delay
-    const timer = setTimeout(() => {
-      setIsDrawerOpen(true);
-    }, 2000);
+  // useEffect(() => {
+  //   // Trigger the drawer opening after 1 second of delay
+  //   const timer = setTimeout(() => {
+  //     setIsDrawerOpen(true);
+  //   }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div>
-      <Drawer open={isDrawerOpen}>
-        <DrawerContent className="rounded-none h-48">
+      {/* <Drawer open={isDrawerOpen}>
+        <DrawerContent className="rounded-none h-56">
           <DrawerClose
             className="w-full flex justify-end px-6"
             onClick={() => setIsDrawerOpen(false)}
           >
-            <RxCross1 />
+            <RxCross1 className="clickable"/>
           </DrawerClose>
           <DrawerHeader>
             <DrawerTitle>
               Sign up for 10% off your first appointment.
             </DrawerTitle>
           </DrawerHeader>
-          <DrawerFooter className="flex justify-center w-full mt-5">
+          <DrawerFooter className="flex justify-center w-full mt-3">
             <input
               className="w-2/3 bg-gray-100 shadow-inner p-2 rounded-none"
               type="email"
             />
             <div className="w-24">
-              <Button className="h-full px-5 rounded-none bg-accent text-white">
+              <Button className="h-full px-5 rounded-none bg-accent text-white hover:bg-red-900">
                 SUBMIT
               </Button>
             </div>
           </DrawerFooter>
         </DrawerContent>
-      </Drawer>
+      </Drawer> */}
 
       <m.div
         className="flex h-screen w-screen"

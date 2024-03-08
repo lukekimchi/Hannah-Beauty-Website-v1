@@ -26,7 +26,7 @@ const Gallery = () => {
                 <img
                   loading="eager"
                   className="home-image clickable"
-                  src={image.before}
+                  src={image.src}
                   alt={`Img ${image.id}`}
                 />
               </a>

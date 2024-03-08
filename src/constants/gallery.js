@@ -1,22 +1,18 @@
 export const galleryImages = [
   {
     id: 1,
-    before: "src/assets/brows.webp",
-    after: "src/assets/smp.webp",
+    src: "src/assets/brows/brows_7_after copy.webp",
   },
   {
     id: 2,
-    before: "src/assets/lash_lift.webp",
-    after: "src/assets/smp.webp",
+    src: "src/assets/lash_lift/lash_lift_3.webp",
   },
   {
     id: 3,
-    before: "src/assets/lip_blush.webp",
-    after: "src/assets/smp.webp",
+    src: "src/assets/eyeliner/eyeliner_1_after copy.webp",
   },
   {
     id: 4,
-    before: "src/assets/eyeliner.webp",
-    after: "src/assets/smp.webp",
+    src: "src/assets/lip_blush/lip_2_after copy.webp",
   },
 ];
