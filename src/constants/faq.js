@@ -86,7 +86,7 @@ export const browsFaqData = [
     • Ideal for Sensitive Skin Types: Perfect for people with oily, sensitive, or aging skin.
     • Quicker Healing: The recovery period is relatively short, typically around 5 days, lessening the interruption to everyday life. The aftercare process is a lot easier too.
     • Customizable: Offers a high degree of adjustability to meet individual preferences and needs.
-    `
+    `,
   },
   {
     id: 3,
@@ -121,6 +121,13 @@ export const browsFaqData = [
         • Avoid any activity that causes heavy sweating.
         • No swimming for 3 weeks.
         • Apply a thin layer of repair cream that I offer or Vaseline 2 times a day.
+        `,
+  },
+  {
+    id: 8,
+    q: "I got my brows done from another shop but I want it touched up. What will this cost me?",
+    a: `
+       Regardless of if you have had previous work done at another shop, the 1st session price of $400 will apply if this is your first time visiting Hannah Beauty.
         `,
   },
 ];
@@ -203,6 +210,13 @@ export const eyelinerFaqData = [
         Refrain from using eye makeup during the initial healing phase, and protect your eyes from sun exposure.
         `,
   },
+  {
+    id: 5,
+    q: "I got my eyeliner done from another shop but I want it touched up. What will this cost me?",
+    a: `
+       Regardless of if you have had previous work done at another shop, the 1st session price of $400 will apply if this is your first time visiting Hannah Beauty.
+        `,
+  },
 ];
 
 // FAQs specific to brows
@@ -264,8 +278,8 @@ export const smpFaqData = [
     q: "How long does it last?",
     a: `
         SMP is classed as a permanent treatment.
-        Around 3 to 6, or more, years after your final treatment, you may notice slight fading of the pigmentation on your scalp (which is usually very minimal). 
-        You may come in for a touch up treatment at this point.
+        Around 4 to 7, or more, years after your final treatment, you may notice slight fading of the pigmentation on your scalp (which is usually very minimal). 
+        You may come in for a touch up treatment at this point.3
         `,
   },
   {
