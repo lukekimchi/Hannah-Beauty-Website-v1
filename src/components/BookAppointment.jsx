@@ -138,7 +138,7 @@ const BookAppointment = () => {
                   className="text-center text-xl italic font-thin text-gray-700 py-8 tracking-widest"
                   {...fadeInLeft}
                 >
-                  3 Horoeka Avenue, Mt Eden, Auckland 1024
+                  Mt Eden, Auckland 1024
                 </m.p>
                 <m.div {...fadeInRight}>
                   <button className="book-now-btn clickable" type="submit">
