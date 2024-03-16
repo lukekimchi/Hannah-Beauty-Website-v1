@@ -10,6 +10,7 @@ import MeetTheTeam from "./MeetTheTeam";
 import Footer from "./Footer";
 import Reviews from "./Reviews";
 import Gallery from "./Gallery";
+import AboutUs from "./AboutUs";
 
 export {
   LandingPage,
@@ -21,5 +22,6 @@ export {
   Gallery,
   Reviews,
   MeetTheTeam,
+  AboutUs,
   Footer,
 };

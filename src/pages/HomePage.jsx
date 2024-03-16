@@ -6,10 +6,10 @@ import {
   Gallery,
   Reviews,
   MeetTheTeam,
+  AboutUs
 } from "../components";
 import MainLayout from "../layout/MainLayout";
 import { useLocation } from "react-router-dom";
-import { motion as m } from "framer-motion";
 
 const HomePage = () => {
   const location = useLocation();
@@ -65,6 +65,7 @@ const HomePage = () => {
         <Gallery />
         <Reviews />
         <MeetTheTeam />
+        <AboutUs />
       </MainLayout>
       {/* </div> */}
     </>
