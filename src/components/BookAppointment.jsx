@@ -2,11 +2,7 @@
 // FIXME: toast for form submission styling
 
 import React, { useState, useEffect, useRef } from "react";
-import { Button } from "@react-email/components";
-import axios from "axios";
 import emailjs from "@emailjs/browser";
-import { Resend } from "resend";
-import ContactFormThanks from "../app/emails/ContactFormThanks";
 import { toast } from "sonner";
 import { Toaster } from "../components/ui/sonner";
 import { motion as m } from "framer-motion";
@@ -57,15 +53,6 @@ const BookAppointment = () => {
         mobile: "",
         msg: "",
       });
-
-      // Send thank you message to customer
-      // const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
-      // const data = resend.emails.send({
-      //   from: 'hannahbeautynz@gmail.com',
-      //   to: formData.email,
-      //   subject: "We got your message!",
-      //   react: <ContactFormThanks name={formData.firstName}/>,
-      // });
     } catch (error) {
       console.log("ERROR", error);
       toast.error("Sorry, something went wrong!", {
