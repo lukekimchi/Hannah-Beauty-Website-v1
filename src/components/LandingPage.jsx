@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import backgroundImageWide from "../assets/hannah_wide_shift_right.webp";
-import backgroundImageNarrow from "../assets/hannah_narrow.webp";
+import backgroundImageWide from "/images/hannah_wide_shift_right.webp";
+import backgroundImageNarrow from "/images/hannah_narrow.webp";
 import { motion as m } from "framer-motion";
 import { fadeIn, fadeInUp } from "../constants/animations";
 import { Button } from "@/components/ui/button";

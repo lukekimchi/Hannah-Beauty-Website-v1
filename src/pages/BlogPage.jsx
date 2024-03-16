@@ -10,7 +10,7 @@ const BlogPage = () => {
         <m.div className="flex flex-col items-center mt-20" >
           <m.img
             className="h-[100px] object-cover mt-5 mb-2"
-            src="src/assets/logo.webp"
+            src="./images/logo.webp"
             alt="Hannah Beauty Logo"
             {...fadeInLeft}
           />
