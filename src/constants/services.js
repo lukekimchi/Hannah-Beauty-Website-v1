@@ -169,7 +169,7 @@ export const servicesData = [
         {
           area: "15 x 9cm",
           img: "./images/smp/smp_area_15x9.webp",
-          sessions: "5",
+          sessions: "6",
           price: "$1,900",
         },
         {

@@ -31,10 +31,10 @@ export const generalFaqData = [
     id: 4,
     q: "Where are you located?",
     a: `
-        3 Horoeka Avenue, Mt Eden, Auckland 1024.
+        Mt Eden, Auckland 1024.
         
         Parking available on street (note: 2 hr limit Mon-Fri).
-        Please do not paark where there is a yellow marking on the ground outside 3A Horoeka Avenue.
+        Please do not park where there is a yellow marking on the ground.
         `,
   },
 ];
@@ -279,7 +279,7 @@ export const smpFaqData = [
     a: `
         SMP is classed as a permanent treatment.
         Around 4 to 7, or more, years after your final treatment, you may notice slight fading of the pigmentation on your scalp (which is usually very minimal). 
-        You may come in for a touch up treatment at this point.3
+        You may come in for a touch up treatment at this point.
         `,
   },
   {
