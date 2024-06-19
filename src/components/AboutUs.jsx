@@ -7,7 +7,7 @@ const AboutUs = () => {
     <m.div className="flex justify-center" {...fadeInUp(0.1)}>
       <div className="w-5/6 border-t border-gray-500 py-20">
         <h2 className="mb-16">About Us</h2>
-        <div className="flex h-full w-5/6 md:w-[60%] mx-auto text-balance leading-7">
+        <div className="flex h-full w-5/6 md:w-[60%] mx-auto text-center leading-7">
           <m.div {...fadeInDown(0.1)}>
             Welcome to Hannah Beauty, where we're all about celebrating your
             natural beauty with a touch of our expertise! At Hannah Beauty, we
