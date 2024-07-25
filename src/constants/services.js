@@ -13,12 +13,12 @@ export const servicesData = [
         {
           session: "1st",
           extraInfo: "",
-          price: "$400",
+          price: "$500",
         },
         {
           session: "2nd",
           extraInfo: "4-6 weeks after 1st session",
-          price: "$150",
+          price: "$200",
         },
         {
           session: "refresh",
@@ -28,8 +28,8 @@ export const servicesData = [
         {
           session: "refresh",
           extraInfo:
-            "13-24 months after 1st session (1st session price applies)",
-          price: "$400",
+            "13-24 months after 1st session",
+          price: "$400 - 500",
         },
       ],
     },
@@ -47,12 +47,12 @@ export const servicesData = [
         {
           session: "Lash Lift",
           extraInfo: "",
-          price: "$70",
+          price: "$80",
         },
         {
           session: "Lash Lift + Tint",
           extraInfo: "For extra vividity and darkness in your lashes.",
-          price: "$80",
+          price: "$90",
         },
       ],
     },
