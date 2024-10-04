@@ -127,7 +127,7 @@ export const browsFaqData = [
     id: 8,
     q: "I got my brows done from another shop but I want it touched up. What will this cost me?",
     a: `
-       Regardless of if you have had previous work done at another shop, the 1st session price of $400 will apply if this is your first time visiting Hannah Beauty.
+       Regardless of if you have had previous work done at another shop, the 1st session price of $500 will apply if this is your first time visiting Hannah Beauty. Prices may vary and we can provide you with a quote after you send us a photo of your current brows.
         `,
   },
 ];
