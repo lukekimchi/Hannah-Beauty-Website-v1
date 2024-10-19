@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 import HomePage from "./pages/HomePage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
+import AcademyPage from "./pages/AcademyPage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ScrollToTop from "./constants/ScrollToTop.js";
 import { servicesData } from "./constants/services";
@@ -40,6 +41,7 @@ const App = () => {
           path="smp"
           element={<ServicesPage service={servicesData[4]} />}
         />
+        <Route path="academy" element={<AcademyPage />} />
         <Route path="blog" element={<BlogPage />} />
       </Routes>
     </>
