@@ -4,7 +4,7 @@ import PriceTable from "./PriceTable";
 import ServiceGallery from "./ServiceGallery";
 import ServiceFaq from "./ServiceFaq";
 
-const ServicesDetail = ({ service }) => {
+const ServiceDetails = ({ service }) => {
   return (
     <div>
       <ServiceDetailCard
@@ -23,4 +23,4 @@ const ServicesDetail = ({ service }) => {
   );
 };
 
-export default ServicesDetail;
+export default ServiceDetails;

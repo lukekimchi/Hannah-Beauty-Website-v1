@@ -1,7 +1,7 @@
 import { React } from "react";
 import { Link, Outlet } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import ServicesDetail from "../components/ServicesDetail";
+import ServiceDetails from "../components/ServiceDetails";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion as m } from "framer-motion";
 import { fadeInDown } from "../constants/animations";
@@ -24,7 +24,6 @@ const ServicesPage = ({ service }) => {
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger" value="eyeliner">
                 <Link to="/eyeliner">EYELINER</Link>
-
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger" value="lip_blush">
                 <Link to="/lip_blush">LIP BLUSH</Link>
@@ -42,7 +41,7 @@ const ServicesPage = ({ service }) => {
                   className="w-5/6 bg-primary px-2 my-5"
                   {...fadeIn}
                 >
-                  <ServicesDetail service={s} />
+                  <ServiceDetails service={s} />
                 </TabsContent>
               ))}
             </div>
