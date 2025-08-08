@@ -1,9 +1,8 @@
-import React from "react";
-import { Routes, Route, useLocation, Navigate } from "react-router-dom";
-
+import { Routes, Route, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import AcademyPage from "./pages/AcademyPage.jsx";
+import AcademyHomePage from "./pages/AcademyHomePage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
 import ScrollToTop from "./constants/ScrollToTop.js";
 import { servicesData } from "./constants/services";
@@ -43,7 +42,7 @@ const App = () => {
           element={<ServicesPage service={servicesData[4]} />}
         />
         <Route path="academy">
-          <Route path="" element={<Navigate replace to="brows" />} />
+          <Route path="" element={<AcademyHomePage/>} />
           <Route path="brows" element={<AcademyPage serviceCourseType={browsCoursesData} />} />
           <Route path="lash_lift" element={<AcademyPage serviceCourseType={lashLiftCoursesData} />} />
           <Route path="eyeliner" element={<AcademyPage serviceCourseType={eyelinerCoursesData} />} />
