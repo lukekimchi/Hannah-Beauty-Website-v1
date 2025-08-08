@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import { fadeInDownStagger } from "../constants/animations";
 import MainLayout from "../layout/MainLayout";
+import { Reviews } from "../components";
+import { academyReviewData } from "../constants/reviews";
 import { motion as m } from "framer-motion";
 
 const sections = [
@@ -23,6 +25,7 @@ const AcademyHomePage = () => {
     <>
       <MainLayout>
 
+        {/* Header Section */}
         <div className="w-full flex flex-col items-center pt-20 pb-10">
           <h2 className="text-center">
             Hannah Beauty Academy
@@ -33,6 +36,7 @@ const AcademyHomePage = () => {
           </p>
         </div>
 
+        {/* Course Sections */}
         <div className="flex flex-col md:flex-row gap-8 w-full items-center justify-center py-16 px-10">
           {sections.map((section, index) => (
             <m.div
@@ -56,6 +60,10 @@ const AcademyHomePage = () => {
             </m.div>
           ))}
         </div>
+        
+        {/* Reviews Section */}
+        <Reviews reviewData={academyReviewData} />
+
       </MainLayout>
       <Outlet />
     </>

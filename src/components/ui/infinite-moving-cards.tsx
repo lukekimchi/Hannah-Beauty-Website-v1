@@ -103,7 +103,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <a
-            href="https://www.google.com/search?q=hannah+beauty&rlz=1C5CHFA_enNZ1034NZ1034&oq=hannah+beauty&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQIxgnMg8IAhAuGEMYsQMYgAQYigUyCggDEAAYsQMYgAQyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYQdIBCDI4NTNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x6d0d4734dbc57787:0xea07f0717ec710d1,1,,,,"
+            href="https://share.google/IsJ7UesCJWNNsqRR1"
             target="blank"
             key={item.name}
           >
