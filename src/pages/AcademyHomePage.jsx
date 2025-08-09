@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { fadeInDownStagger } from "../constants/animations";
+import { fadeInDownStagger, fadeInUp, fadeInDown } from "../constants/animations";
 import MainLayout from "../layout/MainLayout";
 import { Reviews } from "../components";
 import { academyReviewData } from "../constants/reviews";
@@ -24,17 +24,22 @@ const AcademyHomePage = () => {
   return (
     <>
       <MainLayout>
-
         {/* Header Section */}
-        <div className="w-full flex flex-col items-center pt-40 pb-10">
-          <h2 className="text-center">
-            Hannah Beauty Academy
-          </h2>
-          <p className="description text-gray-600 text-center max-w-xl">
+        <m.div className="flex flex-col items-center mt-20" >
+          <m.img
+            className="h-[100px] object-cover mt-5 mb-2"
+            src="./images/logo.webp"
+            alt="Hannah Beauty Logo"
+            {...fadeInDown(0)}
+          />
+        </m.div>
+        <m.div className="w-full flex flex-col items-center pb-10" {...fadeInUp(0)}>
+          <m.h2 className="text-center">Hannah Beauty Academy</m.h2>
+          <m.p className="description text-gray-600 text-center max-w-xl">
             Advance your skills with our expert-led courses in Brows and Lash
             Lift. Select a course below to get started.
-          </p>
-        </div>
+          </m.p>
+        </m.div>
 
         {/* Course Sections */}
         <div className="flex flex-col md:flex-row gap-8 w-full items-center justify-center py-16 px-10">
@@ -53,17 +58,14 @@ const AcademyHomePage = () => {
                   alt={section.alt}
                   className="w-full h-64 object-cover rounded-md border border-gray-200 shadow-sm group-hover:shadow-md transition-shadow filter grayscale"
                 />
-                <h3 className="mt-6 uppercase">
-                  {section.label}
-                </h3>
+                <h3 className="mt-6 uppercase">{section.label}</h3>
               </Link>
             </m.div>
           ))}
         </div>
-        
+
         {/* Reviews Section */}
         <Reviews reviewData={academyReviewData} />
-
       </MainLayout>
       <Outlet />
     </>
