@@ -44,7 +44,6 @@ export const generalFaqData = [
     "How long does it last?"
     "How should I care for my [whatever] after the procedure?"
     "What kind of technique?"
-
 */
 
 // FAQs specific to brows
@@ -132,7 +131,7 @@ export const browsFaqData = [
   },
 ];
 
-// FAQs specific to brows
+// FAQs specific to lash lift
 export const lashLiftFaqData = [
   {
     id: 1,
@@ -171,7 +170,7 @@ export const lashLiftFaqData = [
   },
 ];
 
-// FAQs specific to brows
+// FAQs specific to eyeliner
 export const eyelinerFaqData = [
   {
     id: 1,
@@ -214,12 +213,14 @@ export const eyelinerFaqData = [
     id: 5,
     q: "I got my eyeliner done from another shop but I want it touched up. What will this cost me?",
     a: `
-       Regardless of if you have had previous work done at another shop, the 1st session price of $400 will apply if this is your first time visiting Hannah Beauty.
+       Regardless of if you have had previous work done at another shop, the 1st session price of $400 with wings / $250 without wings will apply if this is your first time visiting Hannah Beauty. 
+      However, if no design changes or corrections are needed, additional discounts may apply.
+      Please send a front-facing photo for an accurate consultation.
         `,
   },
 ];
 
-// FAQs specific to brows
+// FAQs specific to lip blush
 export const lipBlushFaqData = [
   {
     id: 1,
@@ -248,7 +249,7 @@ export const lipBlushFaqData = [
   },
 ];
 
-// FAQs specific to brows
+// FAQs specific to smp
 export const smpFaqData = [
   {
     id: 1,
