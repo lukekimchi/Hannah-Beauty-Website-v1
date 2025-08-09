@@ -7,29 +7,6 @@ export default function CourseDetailCard({ course }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    //   <m.div
-    //   className="py-10 hover:-translate-x-1 hover:-translate-y-1 transition duration-200 ease-in-out border border-black rounded-lg bg-white w-full"
-    //   {...fadeInUp}
-    // >
-    //   <m.h3 className="uppercase px-14" {...fadeInLeft}>
-    //     {course.name}
-    //   </m.h3>
-    //   <div className="flex py-10 px-14">
-    //     <m.p className="description text-justify" {...fadeInRight}>
-    //       {course.description}
-    //     </m.p>
-    //   </div>
-    //   <div className="flex justify-between px-14">
-    //     <m.p className="description" {...fadeInLeft}>
-    //       <em>
-    //         {course.duration} total ({course.sessions})
-    //       </em>
-    //     </m.p>
-    //     {/* <m.p className="description" {...fadeInLeft}>
-    //       <em>${course.price}</em>
-    //     </m.p> */}
-    //   </div>
-    // </m.div>
     <m.div
       className="py-10 hover:-translate-x-1 hover:-translate-y-1 transition duration-200 ease-in-out border border-black rounded-lg bg-white w-full"
       {...fadeInUp}
@@ -38,7 +15,7 @@ export default function CourseDetailCard({ course }) {
         {course.name}
       </m.h3>
       <div className="flex py-10 px-14">
-        <m.p className="description text-justify" {...fadeInRight}>
+        <m.p className="description" {...fadeInRight}>
           {course.description}
         </m.p>
       </div>

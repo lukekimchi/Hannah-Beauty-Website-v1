@@ -1,11 +1,9 @@
-import React from "react";
 import { serviceTypeIntros } from "../constants/academy";
 import { motion as m } from "framer-motion";
 import {
-  fadeInDown,
   fadeInLeft,
   fadeInRight,
-  fadeInUp,
+  fadeInUp
 } from "../constants/animations";
 
 export default function CourseIntroSection({ serviceType }) {
@@ -30,7 +28,7 @@ export default function CourseIntroSection({ serviceType }) {
             <m.img
               {...fadeInUp}
               className="w-full h-auto object-cover justify-between my-auto"
-              src="/images/academy/machine.jpg"
+              src={images.primary}
             />
           </m.div>
           <m.div className="px-10 my-auto text-justify" {...fadeInRight}>
@@ -64,7 +62,7 @@ export default function CourseIntroSection({ serviceType }) {
             <m.img
               {...fadeInUp}
               className="w-full h-auto object-cover justify-between"
-              src="/images/academy/brow.jpg"
+              src={images.secondary}
             />
           </m.div>
         </div>

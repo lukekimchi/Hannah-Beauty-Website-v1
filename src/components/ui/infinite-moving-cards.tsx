@@ -129,7 +129,7 @@ export const InfiniteMovingCards = ({
                     </div>
                   </span>
                 </div>
-                <span className="relative z-20 lg:text-sm text-lg leading-[1.6] text-gray-800 font-normal italic">
+                <span className="relative z-20 lg:text-sm text-lg leading-[1.6] text-gray-800 font-normal italic line-clamp-6">
                   {item.review}
                 </span>
               </blockquote>

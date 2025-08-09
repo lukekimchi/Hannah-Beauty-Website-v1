@@ -34,45 +34,44 @@ export const serviceTypeIntros = {
         you directly.
       `,
     images: {
-      main: "/images/academy/machine.jpg",
-      secondary: "/images/academy/brow.jpg",
+      primary: "/images/academy/brows/machine.webp",
+      secondary: "/images/academy/brows/brow.webp",
     },
   },
   lash_lift: {
     title: "What will you learn?",
     description: `
         In the Hannah Beauty Lash Lift course, you will
-        learn all the essential knowledge and hands-on skills to become a certified lash lift specialist.
+        learn all the essential knowledge and hands-on skills to become a lash lift specialist.
         Lash lifting is an advanced technique that enhances the natural curl and appearance of eyelashes,
         giving clients a brighter, more open-eyed look without extensions. Our course covers everything from
-        lash anatomy and product selection to safe application and aftercare, ensuring you can deliver beautiful,
+        product selection to safe application and aftercare, ensuring you can deliver beautiful,
         long-lasting results for your clients.
       `,
     concepts: [
-      "Lash Anatomy & Growth Cycle",
-      "Client Consultation & Suitability",
-      "Product Knowledge (Lotions, Shields, Rods)",
-      "Patch Testing & Allergies",
-      "Preparation & Cleansing",
+      "The Principles of Lash Lifting",
+      "Softening & Fixing Solutions",
+      "The Eyelash Growth Cycle",
+      "Fool-proof Lash Lifting",
+      "Placement of Silicone Rod",
       "Shield/Rod Selection & Placement",
-      "Lash Lifting & Perming Technique",
-      "Timing & Processing",
-      "Tinting Lashes",
-      "Aftercare Advice",
-      "Troubleshooting & Corrections",
+      "How to Use Tape",
+      "Rod Selection",
+      "Tinting Techniques",
+      "Effective Customer Engagement",
       "Hygiene & Safety",
     ],
     practical: `
-        You will have the opportunity to practice lash lift technique on both mannequins and live models.
+        You will have the opportunity to practice lash lift techniques on a live model.
         The course includes demonstrations by Hannah, our beauty specialist, followed by supervised hands-on sessions.
         You will learn how to properly prepare the lashes, apply lifting solutions, select and position shields or rods,
         and safely tint lashes for enhanced results. All necessary products and tools will be provided during training.
-        By the end of the course, you will be confident in delivering professional lash lift and perm services,
-        understanding how to customize the process for different lash types and client needs.
+        By the end of the course, with your ongoing practice, you will be confident in delivering professional lash lift and perm services,
+        understanding how to customise the process for different lash types and client needs.
       `,
     images: {
-      main: "/images/academy/machine.jpg",
-      secondary: "/images/academy/brow.jpg",
+      primary: "/images/academy/hannah.webp",
+      secondary: "/images/academy/lash_lift/student.webp",
     },
   },
   // Add more service types as needed
@@ -91,16 +90,7 @@ export const browsCoursesData = [
     deposit: "700",
     details: {
       sessions: "5 sessions, 4 hours each\n2 bonus sessions, 2 hours each",
-      model: `Model 1: Demonstrated by Hannah\nModel 2: Demonstrated by you (1st session + 2nd re-touch session 1 month later)
-        \n
-        1st session is free, the 2nd re-touch session (1 month after) is optional at a cost of $200.
-        \n
-        Model Requirements:
-        - Model must not be pregnant or breastfeeding.
-        - Model must not have any active skin conditions or infections in the brow area.
-        - First time models who have never had semi-permanent brows done before, or who have very minimal pigment residue. Review may be required by photo.
-        - Model should be comfortable with having videos and photos taken during the course and uploaded to Hannah Beauty's social media and website.
-        `,
+      model: `Model 1: Demonstrated by Hannah\nModel 2: Demonstrated by you on a Model (1st session + 2nd re-touch session 1 month later)`,
     },
   },
   {
@@ -114,16 +104,7 @@ export const browsCoursesData = [
     deposit: "500",
     details: {
       sessions: "3 sessions, 4 hours each",
-      model: `Model 1: Demonstrated by Hannah\nModel 2: Demonstrated by you (1st session + 2nd re-touch session 1 month later)
-        \n
-        1st session is free, the 2nd re-touch session (1 month after) is optional at a cost of $200.
-        \n
-        Model Requirements:
-        - Model must not be pregnant or breastfeeding.
-        - Model must not have any active skin conditions or infections in the brow area.
-        - First time models who have never had semi-permanent brows done before, or who have very minimal pigment residue. Review may be required by photo.
-        - Model should be comfortable with having videos and photos taken during the course and uploaded to Hannah Beauty's social media and website.
-        `,
+      model: `Model 1: Demonstrated by Hannah\nModel 2: Demonstrated by you on a Model (1st session + 2nd re-touch session 1 month later)`,
     },
   },
   {
@@ -139,35 +120,38 @@ export const browsCoursesData = [
     details: {
       sessions: "One point lesson, 5 hours",
       model: `Single model session demonstrated by you\n
-        Model Requirements:
-        - Model must not be pregnant or breastfeeding.
-        - Model must not have any active skin conditions or infections in the brow area.
-        - First time models who have never had semi-permanent brows done before, or who have very minimal pigment residue. Review may be required by photo.
-        - Model should be comfortable with having videos and photos taken during the course and uploaded to Hannah Beauty's social media and website.
+        The 1st session is free and the 2nd re-touch session (1 month after) is optional at a cost of $200 to the Model.
         `,
     },
   },
 ];
 
-// FIXME: Dummy data below
 export const lashLiftCoursesData = [
   {
     id: 1,
     serviceType: "lash_lift",
-    name: "Beginner Course",
+    name: "Lash Lift Course",
     description:
-      "This course is for those completely new to lash lift tattooing.",
-    duration: "20 hours",
-    sessions: "5 sessions (4hrs each)",
-    price: "6700",
-    deposit: "700",
+      "This is a packed 4 hour course to kick-start your career in Lash Lifting.",
+    duration: "4 hours",
+    price: "1100",
+    deposit: "100",
     details: {
-      sessions: "One point lesson, 5 hours",
-      model: "Demonstrated by Hannah",
+      sessions: "One point lesson, 4 hours",
+      model: `Single model session, demonstrated by Hannah and you.\n
+      Model Requirements:
+      - Not in beginning stages of pregnancy.
+      - At least 18 years old.
+      - No mascara.
+      - No lash extensions.
+      - No contact lenses.
+      - Model must not have any active skin conditions or infections in the area.
+      `,
     },
   },
 ];
 
+// FIXME: Dummy data below
 export const eyelinerCoursesData = [
   {
     id: 1,

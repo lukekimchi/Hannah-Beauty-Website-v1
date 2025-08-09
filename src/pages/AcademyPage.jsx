@@ -40,6 +40,39 @@ const AcademyPage = ({ serviceCourseType }) => {
                 <CourseDetails course={course} />
               ))}
             </div>
+            {serviceCourseType[0].serviceType === "brows" && (
+              <div className="py-10 my-20 border-t border-gray-500">
+                <p className="text-lg">
+                  <strong>The Model</strong>
+                </p>
+                <br />
+                <p className="description">
+                  For all Hannah Beauty Academy courses, you will have the
+                  opportunity to apply your learned skills on a model. The model
+                  may be referred by you or by Hannah Beauty, and must meet the
+                  following requirements:
+                </p>
+                <br />
+                <ul className="description list-disc ml-5">
+                  <li>Not pregnant or breastfeeding.</li>
+                  <li>At least 18 years old.</li>
+                  <li>
+                    Must not have any active skin conditions or infections in
+                    the brow area.
+                  </li>
+                  <li>
+                    First time models who have never had semi-permanent brows
+                    done before, or who have very minimal pigment residue.
+                    Review may be required by photo.
+                  </li>
+                  <li>
+                    Model should be comfortable with having videos and photos
+                    taken during the course and uploaded to Hannah Beauty's
+                    social media and website.
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </m.div>
       </MainLayout>

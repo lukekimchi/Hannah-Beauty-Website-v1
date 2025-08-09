@@ -9,13 +9,13 @@ const sections = [
   {
     label: "Brows",
     url: "/academy/brows",
-    img: "/images/academy/machine.jpg",
+    img: "/images/academy/brows/machine.webp",
     alt: "Brows Course",
   },
   {
     label: "Lash Lift",
     url: "/academy/lash_lift",
-    img: "/images/academy/brow.jpg",
+    img: "/images/academy/lash_lift/student.webp",
     alt: "Lash Lift Course",
   },
 ];
