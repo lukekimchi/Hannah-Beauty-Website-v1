@@ -26,7 +26,7 @@ const AcademyHomePage = () => {
       <MainLayout>
 
         {/* Header Section */}
-        <div className="w-full flex flex-col items-center pt-20 pb-10">
+        <div className="w-full flex flex-col items-center pt-40 pb-10">
           <h2 className="text-center">
             Hannah Beauty Academy
           </h2>
