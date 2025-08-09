@@ -33,6 +33,13 @@ export const fadeInLeftStagger = (delay) => ({
   viewport: { once: true },
 });
 
+export const fadeInDownStagger = (delay) => ({
+  initial: { opacity: 0, y: -30 },
+  whileInView: { opacity: 1, x: 0 },
+  transition: { duration: 1.2, delay, ease: "easeInOut" },
+  viewport: { once: true },
+});
+
 export const fadeInLeftUp = {
   initial: { opacity: 0, x: -20, y: -10 },
   whileInView: { opacity: 1, x: 0, y: 0 },

@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { useEffect } from "react";
 import {
   LandingPage,
   ServicesPreview,
@@ -10,6 +10,7 @@ import {
 } from "../components";
 import MainLayout from "../layout/MainLayout";
 import { useLocation } from "react-router-dom";
+import { googleReviewData } from "../constants/reviews";
 
 const HomePage = () => {
   const location = useLocation();
@@ -63,7 +64,7 @@ const HomePage = () => {
         <ServicesPreview />
         <BookAppointment />
         <Gallery />
-        <Reviews />
+        <Reviews reviewData={googleReviewData} />
         <MeetTheTeam />
         <AboutUs />
       </MainLayout>
