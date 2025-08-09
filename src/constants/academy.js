@@ -63,7 +63,7 @@ export const serviceTypeIntros = {
     ],
     practical: `
         You will have the opportunity to practice lash lift techniques on a live model.
-        The course includes demonstrations by Hannah, our beauty specialist, followed by supervised hands-on sessions.
+        The course includes demonstrations by you, together with Hannah, our beauty specialist.
         You will learn how to properly prepare the lashes, apply lifting solutions, select and position shields or rods,
         and safely tint lashes for enhanced results. All necessary products and tools will be provided during training.
         By the end of the course, with your ongoing practice, you will be confident in delivering professional lash lift and perm services,
@@ -119,7 +119,7 @@ export const browsCoursesData = [
     deposit: "200",
     details: {
       sessions: "One point lesson, 5 hours",
-      model: `Single model session demonstrated by you\n
+      model: `Single model session demonstrated by Hannah and you.\n
         The 1st session is free and the 2nd re-touch session (1 month after) is optional at a cost of $200 to the Model.
         `,
     },
