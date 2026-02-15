@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#fef3f0"/>
+  
+  <!-- Lip balm container -->
+  <rect x="140" y="100" width="50" height="80" fill="#fff" stroke="#c4a896" stroke-width="2" rx="5"/>
+  <ellipse cx="165" cy="100" rx="25" ry="15" fill="#e8d4c4" stroke="#c4a896" stroke-width="2"/>
+  
+  <!-- Balm inside -->
+  <rect x="145" y="120" width="40" height="50" fill="#f5deb3" opacity="0.8"/>
+  
+  <!-- Checkmark on container -->
+  <path d="M 150 110 L 160 120 L 175 105" stroke="#4caf50" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lips -->
+  <ellipse cx="280" cy="150" rx="35" ry="22" fill="#d4505a"/>
+  <ellipse cx="280" cy="150" rx="35" ry="20" fill="#ff6b9d" opacity="0.6"/>
+  
+  <!-- Balm application -->
+  <ellipse cx="280" cy="150" rx="35" ry="22" fill="none" stroke="#f5deb3" stroke-width="3"/>
+  
+  <!-- Shine/gloss effect -->
+  <ellipse cx="270" cy="140" rx="15" ry="8" fill="#ffeaa7" opacity="0.6"/>
+  
+  <!-- X over lipstick -->
+  <circle cx="100" cy="280" r="35" fill="none" stroke="#e74c3c" stroke-width="3"/>
+  <line x1="70" y1="250" x2="130" y2="310" stroke="#e74c3c" stroke-width="3"/>
+  <line x1="130" y1="250" x2="70" y2="310" stroke="#e74c3c" stroke-width="3"/>
+  
+  <!-- Lipstick inside X -->
+  <rect x="85" y="265" width="8" height="30" fill="#c41e3a" rx="2"/>
+  
+  <!-- Brand recommendation -->
+  <text x="280" y="240" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">Laneige</text>
+  <text x="280" y="260" font-size="12" text-anchor="middle" fill="#666">Lip Mask</text>
+</svg>

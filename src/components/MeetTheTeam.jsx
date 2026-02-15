@@ -1,5 +1,4 @@
-import React from "react";
-import TeamMemberCard from "./TeamMemberCard";
+import TeamMemberCard from "./cards/TeamMemberCard";
 import { teamMemberData } from "../constants/team";
 import { motion as m } from "framer-motion";
 import { fadeInUp, fadeInDown } from "../constants/animations";

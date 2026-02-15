@@ -1,6 +1,5 @@
-import React from "react";
 import { servicesData } from "../constants/services";
-import ServicePreviewCard from "./ServicePreviewCard";
+import ServicePreviewCard from "./cards/ServicePreviewCard";
 
 const ServicesPreview = () => {
   return (

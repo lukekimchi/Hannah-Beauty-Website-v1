@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdbcb4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8a89f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="#fef3f0"/>
+  
+  <!-- Face outline -->
+  <ellipse cx="200" cy="180" rx="80" ry="100" fill="url(#skinGrad)"/>
+  
+  <!-- Lips -->
+  <ellipse cx="200" cy="220" rx="35" ry="20" fill="#d4505a"/>
+  
+  <!-- Mouth opening -->
+  <path d="M 170 220 Q 200 230 230 220" fill="none" stroke="#c23a45" stroke-width="2"/>
+  
+  <!-- Smile lines -->
+  <path d="M 165 210 Q 200 215 235 210" fill="none" stroke="#c23a45" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Blush -->
+  <circle cx="130" cy="190" r="25" fill="#e8a89a" opacity="0.6"/>
+  <circle cx="270" cy="190" r="25" fill="#e8a89a" opacity="0.6"/>
+  
+  <!-- Food items -->
+  <rect x="80" y="320" width="40" height="35" fill="#f4a460" rx="3"/>
+  <text x="100" y="345" font-size="24" text-anchor="middle">🍎</text>
+  
+  <circle cx="170" cy="330" r="18" fill="#e8c547"/>
+  <text x="170" y="340" font-size="20" text-anchor="middle">🥗</text>
+  
+  <rect x="260" y="320" width="40" height="35" fill="#8b7355" rx="3"/>
+  <text x="280" y="345" font-size="24" text-anchor="middle">🍞</text>
+  
+  <!-- Energy indicator -->
+  <circle cx="200" cy="80" r="20" fill="#ffd700" opacity="0.8"/>
+  <text x="200" y="85" font-size="20" text-anchor="middle" font-weight="bold">⚡</text>
+</svg>

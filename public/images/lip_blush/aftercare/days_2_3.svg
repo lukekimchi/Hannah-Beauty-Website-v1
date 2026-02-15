@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#fef3f0"/>
+  
+  <!-- Days 2-3 indicator -->
+  <circle cx="100" cy="80" r="30" fill="#fdbcb4" stroke="#2c3e50" stroke-width="2"/>
+  <text x="100" y="75" font-size="12" text-anchor="middle" fill="#2c3e50" font-weight="bold">Day</text>
+  <text x="100" y="95" font-size="20" text-anchor="middle" fill="#2c3e50" font-weight="bold">2-3</text>
+  
+  <!-- Ointment application timeline -->
+  <text x="200" y="60" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">Ointment Schedule</text>
+  
+  <circle cx="100" cy="150" r="15" fill="#f5deb3" stroke="#8b7355" stroke-width="1"/>
+  <text x="100" y="157" font-size="20" text-anchor="middle">🔄</text>
+  <text x="100" y="185" font-size="12" text-anchor="middle" fill="#2c3e50">Multiple</text>
+  <text x="100" y="200" font-size="12" text-anchor="middle" fill="#2c3e50">times daily</text>
+  
+  <!-- Lips -->
+  <ellipse cx="260" cy="150" rx="35" ry="22" fill="#ff8fab" opacity="0.7"/>
+  <text x="260" y="160" font-size="24" text-anchor="middle">💋</text>
+  
+  <!-- Moisturized indicator -->
+  <circle cx="260" cy="150" r="40" fill="none" stroke="#4caf50" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Food restrictions -->
+  <text x="200" y="280" font-size="13" font-weight="bold" text-anchor="middle" fill="#2c3e50">Foods to Avoid:</text>
+  
+  <circle cx="100" cy="330" r="20" fill="#dc143c" opacity="0.3"/>
+  <text x="100" y="337" font-size="16" text-anchor="middle">🌶️</text>
+  
+  <circle cx="170" cy="330" r="20" fill="#e67e22" opacity="0.3"/>
+  <text x="170" y="337" font-size="16" text-anchor="middle">🍜</text>
+  
+  <circle cx="240" cy="330" r="20" fill="#95a5a6" opacity="0.3"/>
+  <text x="240" y="337" font-size="16" text-anchor="middle">🧂</text>
+  
+  <circle cx="310" cy="330" r="20" fill="#e8c547" opacity="0.3"/>
+  <text x="310" y="337" font-size="16" text-anchor="middle">🥡</text>
+  
+  <!-- Use straw icon -->
+  <rect x="140" y="360" width="120" height="20" fill="#fff3e0" stroke="#ff9800" stroke-width="1" rx="3"/>
+  <text x="200" y="375" font-size="11" text-anchor="middle" fill="#2c3e50">💧 Use a straw for drinking</text>
+</svg>

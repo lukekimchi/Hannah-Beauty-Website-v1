@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#fef3f0"/>
+  
+  <!-- Coffee cup (crossed out) -->
+  <ellipse cx="100" cy="200" rx="35" ry="40" fill="#d4a574" stroke="#8b6f47" stroke-width="2"/>
+  <rect x="70" y="160" width="60" height="5" fill="#8b6f47"/>
+  <path d="M 140 180 Q 155 190 140 210" fill="none" stroke="#8b6f47" stroke-width="3"/>
+  
+  <!-- X through coffee -->
+  <line x1="60" y1="160" x2="140" y2="240" stroke="#e74c3c" stroke-width="4"/>
+  <line x1="140" y1="160" x2="60" y2="240" stroke="#e74c3c" stroke-width="4"/>
+  
+  <!-- Wine glass (crossed out) -->
+  <path d="M 280 160 L 290 180 L 285 200 Q 290 210 300 220" fill="none" stroke="#8b4513" stroke-width="2"/>
+  <path d="M 320 160 L 310 180 L 315 200 Q 310 210 300 220" fill="none" stroke="#8b4513" stroke-width="2"/>
+  <ellipse cx="300" cy="235" rx="15" ry="8" fill="none" stroke="#8b4513" stroke-width="2"/>
+  
+  <!-- X through wine -->
+  <line x1="270" y1="150" x2="330" y2="240" stroke="#e74c3c" stroke-width="4"/>
+  <line x1="330" y1="150" x2="270" y2="240" stroke="#e74c3c" stroke-width="4"/>
+  
+  <!-- Prohibition symbol in center -->
+  <circle cx="200" cy="320" r="45" fill="none" stroke="#e74c3c" stroke-width="4"/>
+  <line x1="160" y1="320" x2="240" y2="320" stroke="#e74c3c" stroke-width="4"/>
+  
+  <!-- Text -->
+  <text x="200" y="50" font-size="20" text-anchor="middle" fill="#2c3e50" font-weight="bold">NO</text>
+</svg>

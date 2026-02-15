@@ -2,7 +2,7 @@ import LandingPage from "./LandingPage";
 import Notice from "./Notice";
 import Navbar from "./Navbar";
 
-import ServicePreviewCard from "./ServicePreviewCard";
+import ServicePreviewCard from "./cards/ServicePreviewCard";
 import ServicesPreview from "./ServicesPreview";
 
 import BookAppointment from "./BookAppointment";

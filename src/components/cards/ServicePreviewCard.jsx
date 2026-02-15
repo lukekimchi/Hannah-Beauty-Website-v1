@@ -1,6 +1,5 @@
-import { React } from "react";
 import { motion as m } from "framer-motion";
-import { fadeInUp, fadeInLeft, fadeInRight } from "../constants/animations";
+import { fadeInUp, fadeInLeft, fadeInRight } from "../../constants/animations";
 import { Link, Outlet } from "react-router-dom";
 
 const ServicePreviewCard = ({ name, img, preview }) => {

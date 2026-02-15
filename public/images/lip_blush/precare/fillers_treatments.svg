@@ -1,0 +1,33 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#fef3f0"/>
+  
+  <!-- Face profile -->
+  <circle cx="120" cy="150" r="50" fill="#fdbcb4"/>
+  <ellipse cx="95" cy="160" rx="8" ry="10" fill="#333"/>
+  
+  <!-- Lips -->
+  <ellipse cx="110" cy="185" rx="20" ry="12" fill="#d4505a"/>
+  
+  <!-- Injection point indicator -->
+  <circle cx="110" cy="185" r="8" fill="none" stroke="#ff6b9d" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Syringe -->
+  <rect x="180" y="140" width="25" height="90" fill="#e8f4f8" stroke="#4a90a4" stroke-width="2" rx="3"/>
+  <polygon points="205,150 225,165 225,175" fill="#888"/>
+  <circle cx="192" cy="235" r="8" fill="#ccc" stroke="#888" stroke-width="1"/>
+  
+  <!-- Calendar with checkmarks -->
+  <rect x="280" y="80" width="100" height="100" fill="#fff" stroke="#2c3e50" stroke-width="2" rx="3"/>
+  <rect x="280" y="80" width="100" height="25" fill="#2c3e50"/>
+  <text x="330" y="100" font-size="12" text-anchor="middle" fill="white" font-weight="bold">4 Weeks</text>
+  
+  <!-- Checkmarks -->
+  <text x="295" y="130" font-size="16" fill="#4caf50">✓</text>
+  <text x="330" y="130" font-size="16" fill="#4caf50">✓</text>
+  <text x="365" y="130" font-size="16" fill="#4caf50">✓</text>
+  <text x="295" y="165" font-size="16" fill="#4caf50">✓</text>
+  
+  <!-- Before/After indicator -->
+  <text x="150" y="280" font-size="14" text-anchor="middle" fill="#2c3e50" font-weight="bold">Before or After</text>
+  <text x="150" y="300" font-size="12" text-anchor="middle" fill="#666">4 weeks gap</text>
+</svg>

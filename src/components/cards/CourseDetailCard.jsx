@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { motion as m, AnimatePresence } from "framer-motion";
-import { fadeInUp, fadeInRight, fadeInLeft } from "../constants/animations";
+import { fadeInUp, fadeInRight, fadeInLeft } from "../../constants/animations";
 
 export default function CourseDetailCard({ course }) {
   const [expanded, setExpanded] = useState(false);

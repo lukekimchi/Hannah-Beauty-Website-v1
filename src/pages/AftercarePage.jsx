@@ -1,55 +1,53 @@
 import { Link, Outlet } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
-import ServiceDetails from "../components/ServiceDetails";
+import AfterCareDetails from "../components/AfterCareDetails";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { motion as m } from "framer-motion";
 import { fadeInDown } from "../constants/animations";
-import { servicesData } from "../constants/services";
+import { aftercareData } from "../constants/aftercare";
 
-const ServicesPage = ({ service }) => {
+const AftercarePage = () => {
   return (
     <>
       <MainLayout>
         <m.div className="flex justify-center" {...fadeInDown(0)}>
-          <Tabs defaultValue={service.name}>
+          <Tabs defaultValue="brows" className="w-[90%]">
             <div className="flex justify-center">
               <TabsList className="w-[90%] justify-between px-12 rounded-none py-5 mt-10">
                 <TabsTrigger className="tab-trigger" value="brows">
-                  <Link to="/brows">BROWS</Link>
+                  <Link to="/aftercare/brows">BROWS</Link>
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger" value="lash_lift">
-                <Link to="/lash_lift">LASH LIFT</Link>
+                  <Link to="/aftercare/lash_lift">LASH LIFT</Link>
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger" value="eyeliner">
-                <Link to="/eyeliner">EYELINER</Link>
+                  <Link to="/aftercare/eyeliner">EYELINER</Link>
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger" value="lip_blush">
-                <Link to="/lip_blush">LIP BLUSH</Link>
+                  <Link to="/aftercare/lip_blush">LIP BLUSH</Link>
                 </TabsTrigger>
                 <TabsTrigger className="tab-trigger border-r" value="smp">
-                <Link to="/smp">SMP</Link>
+                  <Link to="/aftercare/smp">SMP</Link>
                 </TabsTrigger>
               </TabsList>
             </div>
             <div className="flex justify-center px-5">
-              {servicesData.map((s) => (
+              {aftercareData.map((a) => (
                 <TabsContent
-                  key={s.id}
-                  value={s.name}
+                  key={a.id}
+                  value={a.name}
                   className="w-5/6 bg-primary px-2 my-5"
                 >
-                  <ServiceDetails service={s} />
+                  <AfterCareDetails aftercare={a} />
                 </TabsContent>
               ))}
             </div>
           </Tabs>
         </m.div>
       </MainLayout>
-      <Outlet />
+    <Outlet />  
     </>
   );
 };
 
-export default ServicesPage;
-
-// FIXME: Fix routing when TabTrigger is clicked. Unusual behaviour atm.
+export default AftercarePage;

@@ -1,5 +1,4 @@
-import React from "react";
-import ServiceDetailCard from "./ServiceDetailCard";
+import ServiceDetailCard from "./cards/ServiceDetailCard";
 import PriceTable from "./PriceTable";
 import ServiceGallery from "./ServiceGallery";
 import ServiceFaq from "./ServiceFaq";

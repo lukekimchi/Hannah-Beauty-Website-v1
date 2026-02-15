@@ -4,6 +4,7 @@ import ServicesPage from "./pages/ServicesPage.jsx";
 import AcademyPage from "./pages/AcademyPage.jsx";
 import AcademyHomePage from "./pages/AcademyHomePage.jsx";
 import BlogPage from "./pages/BlogPage.jsx";
+import AftercarePage from "./pages/AftercarePage.jsx";
 import ScrollToTop from "./constants/ScrollToTop.js";
 import { servicesData } from "./constants/services";
 import { browsCoursesData, lashLiftCoursesData, eyelinerCoursesData, lipBlushCoursesData, smpCoursesData } from "./constants/academy.js";
@@ -50,6 +51,14 @@ const App = () => {
           <Route path="smp" element={<AcademyPage serviceCourseType={smpCoursesData} />} />
         </Route>
         <Route path="blog" element={<BlogPage />} />
+        <Route path="aftercare">
+          <Route path="" element={<AftercarePage/>} />
+          <Route path="brows" element={<AftercarePage/>} />
+          <Route path="lash_lift" element={<AftercarePage/>} />
+          <Route path="eyeliner" element={<AftercarePage/>} />
+          <Route path="lip_blush" element={<AftercarePage/>} />
+          <Route path="smp" element={<AftercarePage/>} />
+        </Route>
       </Routes>
     </>
   );

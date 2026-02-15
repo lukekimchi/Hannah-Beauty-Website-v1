@@ -1,4 +1,4 @@
-import CourseDetailCard from "./CourseDetailCard";
+import CourseDetailCard from "./cards/CourseDetailCard";
 
 export default function CourseDetails({ course }) {
   return (
