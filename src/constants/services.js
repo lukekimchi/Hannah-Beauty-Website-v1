@@ -105,12 +105,12 @@ export const servicesData = [
         {
           session: "1st",
           extraInfo: "",
-          price: "$400",
+          price: "$450",
         },
         {
           session: "2nd",
           extraInfo: "6-8 weeks after 1st session",
-          price: "$150",
+          price: "$200",
         },
         {
           session: "additional",
@@ -125,8 +125,8 @@ export const servicesData = [
         {
           session: "refresh",
           extraInfo:
-            "13-24 months after 1st session (1st session price applies)",
-          price: "$400",
+            "13-24 months after 1st session",
+          price: "$400 - 450",
         },
       ],
     },
