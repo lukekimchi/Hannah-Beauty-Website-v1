@@ -16,7 +16,7 @@ const AfterCareCard = ({ title, sections }) => {
           <m.div className="flex flex-col w-full">
             <h4 className="font-semibold mb-2">{section.title}</h4>
             <m.div
-              className="aftercare-content text-justify w-full"
+              className="aftercare-content text-left w-full"
               dangerouslySetInnerHTML={{ __html: section.content }}
               {...fadeInRight}
             />

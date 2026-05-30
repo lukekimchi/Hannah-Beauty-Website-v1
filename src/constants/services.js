@@ -126,7 +126,7 @@ export const servicesData = [
           session: "refresh",
           extraInfo:
             "13-24 months after 1st session (1st session price applies)",
-          price: "$400",
+          price: "$400 - $450",
         },
       ],
     },

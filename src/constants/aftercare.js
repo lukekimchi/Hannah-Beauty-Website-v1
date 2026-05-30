@@ -9,7 +9,7 @@ export const aftercareData = [
         {
           title: "Preparation Tips",
           img: "./images/brows/brows.webp",
-          content: `<ul><li>Schedule your appointment during a low-stress time</li><li>Avoid caffeine for at least 2 hours before your appointment</li><li>Take pain relief 30 minutes before if needed (acetaminophen or ibuprofen)</li><li>Avoid alcohol and blood thinners (aspirin, fish oil) for 24 hours before</li><li>Get a good night's sleep before your appointment</li><li>Eat a light meal and stay hydrated</li><li>Wear comfortable, loose clothing</li><li>Come with a clean face, free of makeup and products</li><li>Avoid exfoliating or waxing 2 weeks prior</li><li>If you have sensitive skin, let your artist know in advance</li></ul>`
+          content: `<ol><li><strong>No Alcohol or Caffeine</strong> – Avoid 24 hours before your appointment.</li><li><strong>No Blood Thinners</strong> – Avoid aspirin/ibuprofen 48 hours prior (unless prescribed).</li><li><strong>Avoid Skin Treatments</strong> – No exfoliation, peels, or lasers on the brow area for 2 weeks.</li><li><strong>No Tanning/Sun Exposure</strong> – Avoid 1 week before your session.</li><li><strong>Stop Retinol/AHA</strong> – Discontinue 7–10 days before treatment.</li><li><strong>Stay Hydrated</strong> – Drink plenty of water for better pigment retention.</li><li><strong>Inform Us</strong> – Let us know if you're pregnant, nursing, on medication, or have allergies.</li></ol>`
         }
       ]
     },
@@ -17,24 +17,9 @@ export const aftercareData = [
       title: "Aftercare: Post-Appointment Care",
       sections: [
         {
-          title: "First 24 Hours",
+          title: "Important Aftercare Instructions",
           img: "./images/brows/brows.webp",
-          content: `<ul><li>Avoid washing your face or getting water on the treated area</li><li>Don't apply any makeup on the eyebrows</li><li>Avoid touching, picking, or rubbing the area</li><li>Keep the area clean and dry</li></ul>`
-        },
-        {
-          title: "First Week",
-          img: "./images/brows/brows.webp",
-          content: `<ul><li>Gently cleanse around the area with a mild cleanser</li><li>Apply the provided aftercare balm 2-3 times daily</li><li>Avoid swimming, sauna, and excessive sweating</li><li>Don't expose the brows to direct sunlight</li><li>Avoid sleeping face-down</li></ul>`
-        },
-        {
-          title: "Weeks 2-4",
-          img: "./images/brows/brows.webp",
-          content: `<ul><li>Continue with light moisturizing</li><li>The brows may appear darker before fading to the desired shade</li><li>Some flaking is normal - do not pick</li><li>Apply SPF 30+ sunscreen when going outside</li></ul>`
-        },
-        {
-          title: "Long-term Care",
-          img: "./images/brows/brows.webp",
-          content: `<ul><li>Maintain hydration with regular moisturizer</li><li>Use SPF 50+ on eyebrows to prevent fading</li><li>Avoid harsh skincare products directly on the brows</li><li>Schedule touch-ups every 12-18 months to maintain color</li></ul>`
+          content: `<p>At the end of your appointment, we will provide you with an aftercare cream to apply for the next 7-10 days immediately following your procedure. The details of aftercare are as follows:</p><ul><li><strong>Do Not Wash Your Brows</strong> – Water will draw the pigment out of the stroke.</li><li><strong>Avoid Shower Stream</strong> – Do not put your face into the shower stream.</li><li><strong>Face Washing</strong> – Wash your face in front of a mirror to be sure you are avoiding the treatment area completely.</li><li><strong>Do Not Pick or Scratch</strong> – Do not pick, scratch any skin flakes or scabs. Allow them to fall off naturally.</li><li><strong>Avoid Brow Treatments</strong> – Do not tint, dye, thread, or wax the treated area.</li><li><strong>Avoid Heavy Sweating</strong> – Avoid any activity that causes heavy sweating.</li><li><strong>No Swimming</strong> – No swimming for 3 weeks.</li><li><strong>Apply Repair Cream</strong> – Apply a thin layer of repair cream provided or Vaseline 2 times a day.</li></ul>`
         }
       ]
     },
@@ -49,7 +34,7 @@ export const aftercareData = [
         {
           title: "Preparation Tips",
           img: "./images/lash_lift/lash_lift.webp",
-          content: `<ul><li>Avoid caffeine and stimulants 2-3 hours before your appointment</li><li>Take pain relief 30 minutes before if needed</li><li>Avoid alcohol and blood thinners 24 hours before</li><li>Get plenty of rest the night before</li><li>Stay well-hydrated</li><li>Avoid wearing eye makeup on the day of appointment</li><li>Remove contact lenses before your appointment</li><li>Wash your lashes thoroughly to remove any products or buildup</li><li>Avoid lash curlers for 3 days before your appointment</li><li>Inform your technician of any eye sensitivities or conditions</li></ul>`
+          content: `<ol><li><strong>No Caffeine and Stimulants</strong> – Avoid 2-3 hours before your appointment.</li><li><strong>Take Pain Relief</strong> – Take 30 minutes before if needed.</li><li><strong>No Alcohol or Blood Thinners</strong> – Avoid 24 hours before.</li><li><strong>Get Plenty of Rest</strong> – Sleep well the night before.</li><li><strong>Stay Well-Hydrated</strong> – Drink plenty of water.</li><li><strong>No Eye Makeup</strong> – Avoid wearing eye makeup on the day of appointment.</li><li><strong>Remove Contact Lenses</strong> – Remove before your appointment.</li><li><strong>Wash Your Lashes</strong> – Thoroughly remove any products or buildup.</li><li><strong>Avoid Lash Curlers</strong> – Discontinue use 3 days before your appointment.</li><li><strong>Inform Your Technician</strong> – Let us know of any eye sensitivities or conditions.</li></ol>`
         }
       ]
     },
@@ -57,24 +42,9 @@ export const aftercareData = [
       title: "Aftercare: Post-Appointment Care",
       sections: [
         {
-          title: "First 24 Hours",
+          title: "Lash Lift Aftercare",
           img: "./images/lash_lift/lash_lift.webp",
-          content: `<ul><li>Avoid water on the lashes completely</li><li>Do not wash your face or shower (water on face)</li><li>Avoid steam, sauna, and hot tubs</li><li>Don't apply mascara or any eye products</li><li>Keep hands away from the lashes</li></ul>`
-        },
-        {
-          title: "First Week",
-          img: "./images/lash_lift/lash_lift.webp",
-          content: `<ul><li>Gently cleanse the lashes with a lash cleanser</li><li>Apply the provided lash serum daily</li><li>Avoid oil-based makeup removers</li><li>Sleep on your back if possible</li><li>Be gentle when brushing lashes</li></ul>`
-        },
-        {
-          title: "Ongoing Care",
-          img: "./images/lash_lift/lash_lift.webp",
-          content: `<ul><li>Use a lash comb daily to keep lashes lifted and separated</li><li>Apply lash serum 3-4 times per week</li><li>Use waterproof mascara to maintain the lift</li><li>Avoid waterproof makeup remover - use oil-free alternative</li><li>Schedule touch-ups every 6-8 weeks</li></ul>`
-        },
-        {
-          title: "Products to Avoid",
-          img: "./images/lash_lift/lash_lift.webp",
-          content: `<ul><li>Heavy, oil-based mascaras</li><li>Lash curlers</li><li>Eyelash extensions during the lift period</li><li>Harsh waterproof removers</li></ul>`
+          content: `<ul><li><strong>Avoid wetting your eyes</strong> for at least 24hrs after the treatment.</li><li><strong>Avoid using cosmetics or any other product</strong> for a minimum of 24hrs.</li><li>Use a damp cotton wool compress if your eyes feel irritated after the treatment.</li><li><strong>Avoid rubbing your eyes.</strong> This can cause irritation.</li><li>When you remove any eye makeup, use a <strong>non-oily makeup remover.</strong></li><li>Gently brush your lashes using a lash brush on a daily basis.</li><li>Using <strong>mineral mascara</strong> is best for your curled lashes as it gives you the finest finish.</li><li>Avoid spending long periods in direct sunlight after the procedure.</li><li>Minimise or avoid the use of <strong>oil-based beauty care products and cosmetics.</strong></li></ul>`
         }
       ]
     },
@@ -89,7 +59,7 @@ export const aftercareData = [
         {
           title: "Preparation Tips",
           img: "./images/eyeliner/eyeliner.webp",
-          content: `<ul><li>Schedule during a low-stress period in your schedule</li><li>Avoid caffeine 2 hours before your appointment</li><li>Take pain relief 30 minutes before if needed</li><li>Avoid alcohol and blood thinners 24 hours before</li><li>Get a good night's sleep</li><li>Eat a light meal and stay hydrated</li><li>Come with a clean face, free of makeup around the eyes</li><li>Remove contact lenses before the appointment</li><li>Wear sunglasses if you have light-sensitive eyes</li><li>Inform your technician of any eye conditions or sensitivities</li></ul>`
+          content: `<ol><li><strong>No Alcohol or Caffeine</strong> – Avoid 24 hours before your appointment.</li><li><strong>No Blood Thinners</strong> – Avoid aspirin/ibuprofen 48 hours prior (unless prescribed).</li><li><strong>Avoid Skin Treatments</strong> – No exfoliation, peels, or lasers on the eyelid area for 2 weeks.</li><li><strong>No Tanning/Sun Exposure</strong> – Avoid 1 week before your session.</li><li><strong>Stop Retinol/AHA</strong> – Discontinue 7–10 days before treatment.</li><li><strong>Stay Hydrated</strong> – Drink plenty of water for better pigment retention.</li><li><strong>Inform Us</strong> – Let us know if you're pregnant, nursing, on medication, or have allergies.</li></ol>`
         }
       ]
     },

@@ -12,6 +12,15 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': 'http://localhost:3000'
-    }
-  }
+    },
+  },
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'framer-motion',
+    ],
+    exclude: ['axios'],
+  },
 });
