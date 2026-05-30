@@ -22,13 +22,13 @@ export const servicesData = [
         },
         {
           session: "refresh",
-          extraInfo: "3-12 months after 1st session",
+          extraInfo: "3-12 months (returning clients only)",
           price: "$250 - 350",
         },
         {
           session: "refresh",
           extraInfo:
-            "13-24 months after 1st session",
+            "13-24 months (returning clients only)",
           price: "$400 - 500",
         },
       ],
@@ -79,13 +79,13 @@ export const servicesData = [
         },
         {
           session: "refresh",
-          extraInfo: "3-12 months after 1st session",
+          extraInfo: "3-12 months (returning clients only)",
           price: "$250 - 350",
         },
         {
           session: "refresh",
           extraInfo:
-            "13-24 months after 1st session (1st session price applies)",
+            "13-24 months (returning clients only)",
           price: "$400",
         },
       ],
@@ -119,13 +119,13 @@ export const servicesData = [
         },
         {
           session: "refresh",
-          extraInfo: "3-12 months after 1st session",
+          extraInfo: "3-12 months (returning clients only)",
           price: "$250 - 350",
         },
         {
           session: "refresh",
           extraInfo:
-            "13-24 months after 1st session (1st session price applies)",
+            "13-24 months (returning clients only)",
           price: "$400",
         },
       ],
