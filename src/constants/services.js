@@ -120,13 +120,13 @@ export const servicesData = [
         {
           session: "refresh",
           extraInfo: "3-12 months (returning clients only)",
-          price: "$250-350",
+          price: "$250 - 350",
         },
         {
           session: "refresh",
           extraInfo:
             "13-24 months (returning clients only)",
-          price: "$400-450",
+          price: "$400 - 450",
 
         },
       ],
