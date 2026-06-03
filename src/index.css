@@ -41,6 +41,37 @@ h3 {
   @apply mt-5 mb-10 bg-accent hover:bg-red-800 text-white lg:py-4 lg:px-7 lg:text-base text-3xl py-6 px-8 shadow-2xl
 }
 
+.drawer-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.drawer-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.drawer-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.drawer-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 9999px;
+  transition: background-color 150ms ease;
+}
+
+.drawer-scrollbar.scrolling {
+  scrollbar-color: rgba(203, 213, 225, 0.9) transparent;
+}
+
+.drawer-scrollbar.scrolling::-webkit-scrollbar-thumb {
+  background: rgba(203, 213, 225, 0.9);
+}
+
+.drawer-scrollbar.scrolling:hover::-webkit-scrollbar-thumb {
+  background: rgba(203, 213, 225, 1);
+}
+
 .stick-to-top {
   position: sticky !important;
   top: 0;
