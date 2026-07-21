@@ -18,9 +18,9 @@ const Navbar = () => {
           <NavLink to="/academy">
             <p className="nav-link">academy</p>
           </NavLink>
-          <NavLink to="/blog">
+          <a href="https://blog.hannahbeauty.co.nz" target="_blank" rel="noopener noreferrer">
             <p className="nav-link">blog</p>
-          </NavLink>
+          </a>
 
           <NavLink
             to="/#book"
