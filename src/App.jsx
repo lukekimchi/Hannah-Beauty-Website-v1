@@ -49,7 +49,8 @@ const App = () => {
           <Route path="lip_blush" element={<AcademyPage serviceCourseType={lipBlushCoursesData} />} />
           <Route path="smp" element={<AcademyPage serviceCourseType={smpCoursesData} />} />
         </Route>
-        <Route path="blog" element={<BlogPage />} />
+        {/* <Route path="blog" element={<BlogPage />} /> */}
+        <Route path="https://blog.hannahbeauty.co.nz" element={<BlogPage />} />
       </Routes>
     </>
   );
