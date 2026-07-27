@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import Notice from "./Notice";
 import { academy } from "../constants/notice";
@@ -18,9 +17,9 @@ const Navbar = () => {
           <NavLink to="/academy">
             <p className="nav-link">academy</p>
           </NavLink>
-          <NavLink to="/blog">
+          <a href="https://blog.hannahbeauty.co.nz" target="_blank" rel="noopener noreferrer">
             <p className="nav-link">blog</p>
-          </NavLink>
+          </a>
 
           <NavLink
             to="/#book"

@@ -3,7 +3,6 @@ import HomePage from "./pages/HomePage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import AcademyPage from "./pages/AcademyPage.jsx";
 import AcademyHomePage from "./pages/AcademyHomePage.jsx";
-import BlogPage from "./pages/BlogPage.jsx";
 import ScrollToTop from "./constants/ScrollToTop.js";
 import { servicesData } from "./constants/services";
 import { browsCoursesData, lashLiftCoursesData, eyelinerCoursesData, lipBlushCoursesData, smpCoursesData } from "./constants/academy.js";
@@ -49,7 +48,7 @@ const App = () => {
           <Route path="lip_blush" element={<AcademyPage serviceCourseType={lipBlushCoursesData} />} />
           <Route path="smp" element={<AcademyPage serviceCourseType={smpCoursesData} />} />
         </Route>
-        <Route path="blog" element={<BlogPage />} />
+        {/* <Route path="blog" element={<BlogPage />} /> */}
       </Routes>
     </>
   );
