@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import Notice from "./Notice";
 import { academy } from "../constants/notice";
