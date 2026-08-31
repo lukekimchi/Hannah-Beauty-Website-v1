@@ -31,7 +31,7 @@ export const site = {
   url: "https://www.hannahbeauty.co.nz",
   logo: "/images/logo_clear.png",
 
-  // TODO 확인 필요: 웹 검색 결과에서 가져온 번호입니다. 실제 번호와 대조해 주세요.
+  // 확인 완료 (2026-08-31)
   telephone: "+64 27 659 2705",
 
   // 주소. 번지수를 아는 경우 streetAddress 를 "12 Horoeka Avenue" 형태로 바꾸면
@@ -76,12 +76,21 @@ export const site = {
   // 예: { latitude: -36.8875, longitude: 174.7530 }
   geo: null,
 
-  // 예: [{ days: ["Monday","Tuesday"], opens: "09:00", closes: "18:00" }]
-  openingHours: null,
+  // TODO 확인 필요: businessme.co.nz 등록 정보에서 가져왔습니다.
+  // 구글 비즈니스 프로필의 영업시간과 한 번 대조해 주세요.
+  // 여기에 잘못된 시간이 들어가면 AI 와 검색이 손님에게 그대로 안내합니다.
+  openingHours: [
+    {
+      days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    { days: ["Saturday"], opens: "08:00", closes: "17:00" },
+    { days: ["Sunday"], opens: "08:00", closes: "12:00" },
+  ],
 
-  // 구글 리뷰 129개. 평균 평점을 확인해서 ratingValue 를 채우면 활성화됩니다.
-  // 예: { ratingValue: 5, reviewCount: 129 }
-  aggregateRating: null,
+  // 구글 리뷰 129개, 평점 5.0 (확인 완료 2026-08-31)
+  aggregateRating: { ratingValue: 5, reviewCount: 129 },
 };
 
 /** 사이트맵과 프리렌더링에 사용하는 전체 경로 목록 (src/App.jsx 와 일치해야 함) */
