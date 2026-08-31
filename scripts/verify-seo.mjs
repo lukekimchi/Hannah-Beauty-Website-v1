@@ -166,6 +166,75 @@ if (robots) {
   );
 }
 
+// ---------------------------------------------------------------- 이미지
+
+/**
+ * 브라우저가 실제로 그릴 수 있는 이미지인지 확인한다.
+ *
+ * SMP 면적 이미지들이 확장자만 .webp 이고 내용은 HEIC(아이폰 사진 형식)여서
+ * 사파리를 뺀 모든 브라우저에서 깨진 적이 있다. 확장자는 믿을 수 없으므로
+ * 파일 앞부분의 시그니처를 직접 본다.
+ */
+function imageFormat(buf) {
+  if (buf.length < 12) return "TOO_SHORT";
+  const ascii = (start, end) => buf.subarray(start, end).toString("latin1");
+
+  if (ascii(0, 4) === "RIFF" && ascii(8, 12) === "WEBP") return "WEBP";
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return "JPEG";
+  if (ascii(1, 4) === "PNG") return "PNG";
+  if (ascii(0, 4) === "GIF8") return "GIF";
+  if (ascii(0, 4) === "<svg" || ascii(0, 5) === "<?xml") return "SVG";
+
+  if (ascii(4, 8) === "ftyp") {
+    const brand = ascii(8, 12);
+    if (brand === "avif" || brand === "avis") return "AVIF";
+    return "HEIC"; // heic, heix, mif1 등 — 애플 사파리 외에는 표시되지 않음
+  }
+  return "UNKNOWN";
+}
+
+// 브라우저가 지원하는 포맷. HEIC 는 여기 없다.
+const RENDERABLE = new Set(["WEBP", "JPEG", "PNG", "GIF", "SVG", "AVIF"]);
+
+// src/constants 가 참조하는 모든 이미지 경로를 모은다
+const referenced = new Set();
+for (const file of fs.readdirSync("src/constants")) {
+  if (!file.endsWith(".js")) continue;
+  const text = fs.readFileSync(path.join("src/constants", file), "utf8");
+  for (const m of text.matchAll(/["'`](?:\.)?(\/images\/[^"'`]+)["'`]/g)) {
+    referenced.add(m[1]);
+  }
+}
+
+const missing = [];
+const unrenderable = [];
+
+for (const ref of referenced) {
+  const target = path.join(DIST, ref.replace(/^\//, ""));
+  if (!fs.existsSync(target)) {
+    missing.push(ref);
+    continue;
+  }
+  const fd = fs.openSync(target, "r");
+  const head = Buffer.alloc(16);
+  fs.readSync(fd, head, 0, 16, 0);
+  fs.closeSync(fd);
+  const format = imageFormat(head);
+  if (!RENDERABLE.has(format)) unrenderable.push(ref + " (" + format + ")");
+}
+
+check(
+  "코드가 참조하는 이미지가 모두 배포본에 존재한다",
+  missing.length === 0,
+  missing.length ? "누락: " + missing.join(", ") : referenced.size + "개 참조"
+);
+
+check(
+  "모든 이미지가 브라우저에서 표시 가능한 포맷이다",
+  unrenderable.length === 0,
+  unrenderable.length ? unrenderable.join(", ") : "HEIC 등 미지원 포맷 없음"
+);
+
 // --------------------------------------------------------------------- 출력
 
 console.log("");
