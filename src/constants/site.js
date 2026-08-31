@@ -76,9 +76,9 @@ export const site = {
   // 예: { latitude: -36.8875, longitude: 174.7530 }
   geo: null,
 
-  // TODO 확인 필요: businessme.co.nz 등록 정보에서 가져왔습니다.
-  // 구글 비즈니스 프로필의 영업시간과 한 번 대조해 주세요.
-  // 여기에 잘못된 시간이 들어가면 AI 와 검색이 손님에게 그대로 안내합니다.
+  // 확인 완료 (2026-08-31). 일요일 오전 영업 포함.
+  // 영업시간이 바뀌면 이 값과 구글 비즈니스 프로필을 함께 고쳐야 합니다.
+  // 여기 값이 틀리면 AI 와 검색이 손님에게 그대로 안내합니다.
   openingHours: [
     {
       days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
