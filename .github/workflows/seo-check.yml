@@ -1,0 +1,30 @@
+name: SEO check
+
+# PR 을 올리거나 main 에 푸시할 때마다, 빌드 결과가
+# 검색엔진 / AI 크롤러에게 읽히는 상태인지 자동으로 검사한다.
+# 실패하면 PR 에 빨간 표시가 뜨고 머지를 막을 수 있다.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: 빌드
+        run: npm run build
+
+      - name: SEO / AI 크롤러 검증
+        run: npm run verify:seo
