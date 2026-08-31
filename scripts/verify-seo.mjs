@@ -235,6 +235,23 @@ check(
   unrenderable.length ? unrenderable.join(", ") : "HEIC 등 미지원 포맷 없음"
 );
 
+// ------------------------------------------------------------- SPA 폴백
+
+/**
+ * 클라이언트 사이드 라우팅을 쓰므로 /brows 같은 주소에 해당하는 파일이 없다.
+ * 폴백 규칙이 빠지면 직접 접속과 새로고침이 전부 404 가 된다.
+ */
+const redirects = read("_redirects");
+
+check("_redirects 가 배포된다", Boolean(redirects));
+
+if (redirects) {
+  check(
+    "SPA 폴백 규칙이 있다 (직접 접속·새로고침이 404 가 되지 않음)",
+    /^\/\*\s+\/index\.html\s+200/m.test(redirects)
+  );
+}
+
 // --------------------------------------------------------------------- 출력
 
 console.log("");
