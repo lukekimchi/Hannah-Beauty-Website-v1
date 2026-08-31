@@ -1,11 +1,11 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import AcademyPage from "./pages/AcademyPage.jsx";
 import AcademyHomePage from "./pages/AcademyHomePage.jsx";
 import ScrollToTop from "./constants/ScrollToTop.js";
 import { servicesData } from "./constants/services";
-import { browsCoursesData, lashLiftCoursesData, eyelinerCoursesData, lipBlushCoursesData, smpCoursesData } from "./constants/academy.js";
+import { browsCoursesData, lashLiftCoursesData } from "./constants/academy.js";
 
 const App = () => {
   const location = useLocation();
@@ -44,11 +44,11 @@ const App = () => {
           <Route path="" element={<AcademyHomePage/>} />
           <Route path="brows" element={<AcademyPage serviceCourseType={browsCoursesData} />} />
           <Route path="lash_lift" element={<AcademyPage serviceCourseType={lashLiftCoursesData} />} />
-          <Route path="eyeliner" element={<AcademyPage serviceCourseType={eyelinerCoursesData} />} />
-          <Route path="lip_blush" element={<AcademyPage serviceCourseType={lipBlushCoursesData} />} />
-          <Route path="smp" element={<AcademyPage serviceCourseType={smpCoursesData} />} />
+          {/* Courses we do not run were removed. Send their old URLs to the academy home. */}
+          <Route path="*" element={<Navigate to="/academy" replace />} />
         </Route>
         {/* <Route path="blog" element={<BlogPage />} /> */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>
   );

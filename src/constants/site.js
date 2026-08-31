@@ -105,7 +105,4 @@ export const routes = [
   "/academy",
   "/academy/brows",
   "/academy/lash_lift",
-  "/academy/eyeliner",
-  "/academy/lip_blush",
-  "/academy/smp",
 ];

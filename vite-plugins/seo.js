@@ -16,12 +16,8 @@ import { servicesData } from "../src/constants/services.js";
 import {
   browsCoursesData,
   lashLiftCoursesData,
-  eyelinerCoursesData,
-  lipBlushCoursesData,
-  smpCoursesData,
 } from "../src/constants/academy.js";
 import {
-  generalFaqData,
   browsFaqData,
   lashLiftFaqData,
   eyelinerFaqData,
@@ -128,9 +124,6 @@ function courseOffers() {
   const groups = [
     ["brows", browsCoursesData],
     ["lash_lift", lashLiftCoursesData],
-    ["eyeliner", eyelinerCoursesData],
-    ["lip_blush", lipBlushCoursesData],
-    ["smp", smpCoursesData],
   ];
 
   const offers = [];
@@ -227,10 +220,19 @@ function businessSchema() {
   return node;
 }
 
-/** FAQPage 스키마. 자리표시자나 빈 답변은 자동으로 제외된다. */
+/**
+ * FAQPage 스키마.
+ *
+ * 화면에 실제로 렌더링되는 FAQ 만 넣는다. 구글은 FAQ 구조화 데이터가
+ * 페이지에 보이는 내용과 일치할 것을 요구하기 때문이다.
+ * src/constants/faq.js 의 generalFaqData 는 어느 컴포넌트도 쓰지 않으므로
+ * (ServiceFaq.jsx 는 시술별 FAQ 만 import 한다) 여기서도 제외한다.
+ * 나중에 그 4개를 화면에 노출하면 여기에도 다시 추가할 것.
+ *
+ * 자리표시자나 빈 답변은 아래 filter 에서 자동으로 걸러진다.
+ */
 function faqSchema() {
   const entries = [
-    ...generalFaqData,
     ...browsFaqData,
     ...lashLiftFaqData,
     ...eyelinerFaqData,

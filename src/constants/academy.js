@@ -134,8 +134,8 @@ export const lashLiftCoursesData = [
     description:
       "This is a packed 4 hour course to kick-start your career in Lash Lifting.",
     duration: "4 hours",
-    price: "1100",
-    deposit: "100",
+    price: "1200",
+    deposit: "200",
     details: {
       sessions: "One point lesson, 4 hours",
       model: `Single model session, demonstrated by Hannah and you.\n
@@ -148,47 +148,5 @@ export const lashLiftCoursesData = [
       - Model must not have any active skin conditions or infections in the area.
       `,
     },
-  },
-];
-
-// FIXME: Dummy data below
-export const eyelinerCoursesData = [
-  {
-    id: 1,
-    serviceType: "eyeliner",
-    name: "Beginner Course",
-    description:
-      "This course is for those completely new to eyeliner tattooing.",
-    duration: "20 hours",
-    sessions: "5 sessions (4hrs each)",
-    price: "eyeliner_price",
-    deposit: "eyeliner_deposit",
-  },
-];
-
-export const lipBlushCoursesData = [
-  {
-    id: 1,
-    serviceType: "lip_blush",
-    name: "Beginner Course",
-    description:
-      "This course is for those completely new to lip blush tattooing.",
-    duration: "20 hours",
-    sessions: "5 sessions (4hrs each)",
-    price: "6700",
-    deposit: "700",
-  },
-];
-
-export const smpCoursesData = [
-  {
-    id: 1,
-    serviceType: "smp",
-    name: "Beginner Course",
-    description: "This course is for those completely new to SMP tattooing.",
-    duration: "20 hours",
-    sessions: "5 sessions (4hrs each)",
-    price: "6700",
-    deposit: "700",
   },
 ];
