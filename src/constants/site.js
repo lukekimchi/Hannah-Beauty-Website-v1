@@ -42,6 +42,9 @@ export const site = {
   postalCode: "1024",
   addressCountry: "NZ",
 
+  // 2018년 1월 개업 (확인 완료 2026-08-31)
+  foundingDate: "2018-01",
+
   priceRange: "$$",
   currenciesAccepted: "NZD",
   pricesIncludeTax: true, // 표시 가격 GST 포함

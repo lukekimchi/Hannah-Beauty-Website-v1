@@ -165,6 +165,7 @@ function businessSchema() {
     image: site.url + site.logo,
     logo: site.url + site.logo,
     telephone: site.telephone,
+    foundingDate: site.foundingDate,
     priceRange: site.priceRange,
     currenciesAccepted: site.currenciesAccepted,
     knowsLanguage: site.languages,
