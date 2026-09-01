@@ -145,37 +145,37 @@ export const servicesData = [
       rows: [
         {
           area: "3 x 9cm",
-          img: "./images/smp/smp_area_3x9.webp",
+          img: "./images/smp/smp_area_3x9.jpg",
           sessions: "2",
           price: "$450",
         },
         {
           area: "5 x 9cm",
-          img: "./images/smp/smp_area_5x9.webp",
+          img: "./images/smp/smp_area_5x9.jpg",
           sessions: "4",
           price: "$700",
         },
         {
           area: "8 x 9cm",
-          img: "./images/smp/smp_area_8x9.webp",
+          img: "./images/smp/smp_area_8x9.jpg",
           sessions: "5",
           price: "$900",
         },
         {
           area: "10 x 9cm",
-          img: "./images/smp/smp_area_10x9.webp",
+          img: "./images/smp/smp_area_10x9.jpg",
           sessions: "5",
           price: "$1,300",
         },
         {
           area: "15 x 9cm",
-          img: "./images/smp/smp_area_15x9.webp",
+          img: "./images/smp/smp_area_15x9.jpg",
           sessions: "6",
           price: "$1,900",
         },
         {
           area: "15 x 9cm +",
-          img: "./images/smp/smp_area_15x9.webp",
+          img: "./images/smp/smp_area_15x9.jpg",
           sessions: "variable",
           price: "variable",
         },
