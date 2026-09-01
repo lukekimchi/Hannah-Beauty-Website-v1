@@ -16,6 +16,10 @@ const App = () => {
       {shouldRenderScrollToTop && <ScrollToTop />}
       <Routes>
         <Route path="/" element={<HomePage />} />
+        {/* 예약 섹션으로 바로 가는 깨끗한 주소.
+            "/#book" 은 해시라 서버로 전송되지 않아 구글 비즈니스 프로필,
+            디렉터리, 인스타 프로필 링크 등 외부에 넣으면 잘려나간다. */}
+        <Route path="book" element={<HomePage />} />
         <Route
           path="services"
           element={<ServicesPage service={servicesData[0]} />}
