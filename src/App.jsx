@@ -9,7 +9,11 @@ import { browsCoursesData, lashLiftCoursesData } from "./constants/academy.js";
 
 const App = () => {
   const location = useLocation();
-  const shouldRenderScrollToTop = !location.pathname.includes("#book");
+  // ScrollToTop 은 경로가 바뀔 때마다 맨 위로 올린다.
+  // "/book" 은 예약 섹션까지 내려가야 하므로 제외한다.
+  // (이전 조건은 pathname 에서 "#book" 을 찾고 있었는데,
+  //  해시는 pathname 에 들어가지 않으므로 한 번도 걸린 적이 없다.)
+  const shouldRenderScrollToTop = location.pathname !== "/book";
 
   return (
     <>
