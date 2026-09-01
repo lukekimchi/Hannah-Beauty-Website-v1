@@ -21,16 +21,10 @@ const Navbar = () => {
             <p className="nav-link">blog</p>
           </a>
 
-          <NavLink
-            to="/#book"
-            onClick={(e) => {
-              window.scroll({
-                top: document.querySelector("#book").offsetTop - 100,
-                behavior: "smooth",
-              });
-              e.preventDefault();
-            }}
-          >
+          {/* 예약 섹션 전용 경로. 스크롤은 HomePage 가 처리한다.
+              (예전에는 여기서 직접 스크롤했는데, 홈이 아닌 페이지에서는
+               #book 요소가 없어 오류가 났다.) */}
+          <NavLink to="/book">
             <p className="text-white hover:bg-red-800 clickable bg-accent shadow-lg font-medium text-lg px-6 py-2">book
             </p>
           </NavLink>
